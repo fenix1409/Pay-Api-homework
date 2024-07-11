@@ -154,17 +154,13 @@ body {
   transition: all 0.3s linear;
 }
 
-.show {
-  right: 0;
-}
-
 .navbar__top {
   text-align: end;
   padding: 23px 0 25px;
   border-bottom: 1px solid white;
 }
 
-.navbar__top-bnt {
+.navbar__top-btn {
   background-color: transparent;
   border: none;
 }
@@ -220,7 +216,10 @@ body {
   .site-header {
     padding: 40px 0 32px;
   }
-  .header__list, .header__btn-demo {
+  .header__list {
+    display: none;
+  }
+  .header__btn-demo {
     display: none;
   }
   .header__hamburger-btn {
