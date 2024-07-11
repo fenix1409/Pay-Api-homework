@@ -28,10 +28,29 @@
                     </ul>
                 </div>
                 <a class="header__btn-demo" href="#">Schedule a Demo</a>
-                <button class="header__hamburger-btn">
+                <button onclick="handleMenuBtnClick()" class="header__hamburger-btn">
                     <img src="./images/hamburger-btn.svg" alt="Hamburger img" width="28" height="17">
                 </button>
             </div>
+        </div>
+        <div class="navbar-menu navbar">
+            <div class="navbar__top">
+                <button onclick="handleCloseModal()" class="navbar__top-btn">
+                    <img src="./images/closeicon.svg" alt="Close img" width="22" height="23">
+                </button>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Pricing</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Contact</a>
+                </li>
+            </ul>
+            <a class="navbar__link-demo" href="#">Schedule a Demo</a>
         </div>
     </header>
     <main class="site-main">
@@ -52,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="work-section">
+        <!-- <section id="about" class="work-section">
             <div class="container">
                 <div class="work">
                     <div class="work__content-wrapper">
@@ -152,9 +171,9 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
         <div class="container">
             <div class="footer">
                 <div class="footer__logo-wrapper">
@@ -194,6 +213,8 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
+
+<script src="./js/main.js"></script>
 </body>
 </html>

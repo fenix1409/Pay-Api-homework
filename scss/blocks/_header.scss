@@ -16,14 +16,15 @@
 .header__logo-link {
     @include textStyle($MB:0px, $FS:15px, $FW:700, $CLR:$text-clr, $LH:17px, $CASE:capitalize);
     transition: all 0.3s linear;
-
+    
     &:hover{
         color: $title-clr;
     }
 }
 .header__btn-demo {
+    display: inline-block;
     @include buttonStyle($BTN_W:173px, $BTN_PY:15px, $BTN_BG_CLR:$pink-clr,$BTN_BR_Radius:30px, $BTN_Border_CLR:transparent,$BTN_FS:16px,$BTN_FW:700, $BTN_LH:17px, $BTN_CLR:$white-clr,$BTN_CASE:capitalize);
-
+    
     &:hover{
         opacity: 75%;
     }
@@ -34,30 +35,61 @@
     display: none;
 }
 
-
-
+.navbar-menu{
+    padding: 25px;
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    background-color: #1B262F;
+    z-index: 50;
+    top: 0;
+    right: -100px;
+    transition: all 0.3s linear;
+}
+.show{
+    right: 0;
+}
+.navbar__top{
+    text-align: end;
+    padding: 23px 0 25px;
+    border-bottom: 1px solid $white-clr;
+}
+.navbar__top-bnt{
+    background-color: transparent;
+    border: none;
+}
+.navbar__list{
+    padding: 43px 0 32px;
+    @include Display($items:center, $space: center, $gap:32px);
+    flex-direction: column;
+}
+.navbar__link{
+    @include textStyle($MB:0px, $FS:20px, $FW:700, $CLR:$text-clr, $LH:23px, $CASE:capitalize);
+    transition: all 0.3s linear;
+    
+    &:hover{
+        color: $title-clr;
+    }
+}
+.navbar__link-demo{
+    display: inline-block;
+    @include buttonStyle($BTN_W:100%, $BTN_PY:15px, $BTN_BG_CLR:$pink-clr,$BTN_BR_Radius:30px, $BTN_Border_CLR:transparent,$BTN_FS:16px,$BTN_FW:700, $BTN_LH:17px, $BTN_CLR:$white-clr,$BTN_CASE:capitalize);
+    &:hover{
+        opacity: 75%;
+    }   
+}
 // header tablet 
-@media (max-width:900px){
+@media (max-width:850px){
     .site-header{
         padding: 40px 0 48px;
-    }
-    body{
-        background-image: url(../../images/tablet-header.png);
-        background-repeat: no-repeat;
-        background-position: center top;
     }
 }
 // header tablet 
 
 // header mobile 
-@media (max-width:692px){
+@media (max-width:689px){
     .site-header{
         padding: 40px 0 32px;
-    }
-    body{
-        background-image: url(../../images/mobile-header.png);
-        background-repeat: no-repeat;
-        background-position: center top;
     }
     .header__list, .header__btn-demo{
         display: none;
