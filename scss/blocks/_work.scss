@@ -1,0 +1,36 @@
+.work-section {
+    padding: 100px 0;
+    background-color: $work-clr;
+    background-image: url(../../images/work-bg.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.work {
+    @include Display($items: center, $space:start, $gap:131px);
+}
+.work__content-wrapper {
+    width: 445px;
+}
+.work__title {
+    @include textStyle($MB:24px, $FS:48px, $FW:400, $CLR:$white-clr, $LH:56px, $CASE:inherit);
+    font-family: DM Serif Display;
+}
+.work__text {
+    @include textStyle($MB:32px, $FS:15px, $FW:400, $CLR:rgb(251, 252, 254), $LH:28px, $CASE:inherit);
+    font-family: 'Public Sans';
+}
+.work__about-btn {
+    display: inline-block;
+    @include buttonStyle($BTN_W:129px, $BTN_PY:15px, $BTN_BG_CLR:transparent,$BTN_BR_Radius:30px, $BTN_Border_CLR:$white-clr,$BTN_FS:15px,$BTN_FW:700, $BTN_LH:18px, $BTN_CLR:$white-clr,$BTN_CASE:inherit);
+    &:hover{
+        background-color: $white-clr;
+        color: $work-clr;
+    }
+}
+.work__logo-wrapper{
+    width: 551px;
+}
+.work__list {
+    @include Display($items: center, $space:start, $gap:42px);
+    flex-wrap: wrap;
+} 

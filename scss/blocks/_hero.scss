@@ -1,0 +1,72 @@
+.hero-section {
+    padding-bottom: 75px;
+}
+.hero {
+    @include Display($items: center, $space:start, $gap:206px);
+}
+.hero__content-wrapper {
+    width: 546px;
+}
+.hero__title {
+    @include textStyle($MB:21px, $FS:72px, $FW:400, $CLR:$title-clr, $LH:72px, $CASE:inherit);
+    font-family: DM Serif Display;
+}
+.hero__form {
+    width: 445px;
+    margin-bottom: 16px;
+}
+.hero__label {
+    width: 100%;
+    position: relative;
+}
+.hero__input {
+    width: 100%;
+    padding: 15px 5px 15px 27px;
+    box-shadow: 10px 10px 25px -10px #36536B40;
+    @include textStyle($MB:0px, $FS:15px, $FW:700, $CLR:$text-clr, $LH:17px, $CASE:inherit);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+
+    &::placeholder{
+        color: $text-clr;
+    }
+    &:focus{
+        box-shadow: 0 0 5px 0 $title-clr;
+    }
+}
+.hero__submit-btn {
+    position: absolute;
+    right: 0;
+    margin: auto;
+    @include buttonStyle($BTN_W:173px, $BTN_PY:14.5px, $BTN_BG_CLR:$pink-clr,$BTN_BR_Radius:30px, $BTN_Border_CLR:transparent,$BTN_FS:16px,$BTN_FW:700, $BTN_LH:17px, $BTN_CLR:$white-clr,$BTN_CASE:inherit);
+    &:hover{
+        opacity: 75%;
+    }
+}
+.hero__text {
+    padding-left: 27px;
+    @include textStyle($MB:0px, $FS:15px, $FW:400, $CLR:$text-clr, $LH:17px, $CASE:inherit);
+}
+.hero__text--strong-text {
+    padding-left: 0px;
+    @include textStyle($MB:0px, $FS:15px, $FW:400, $CLR:$title-clr, $LH:17px, $CASE:inherit);
+}
+
+// hero tablet 
+    @media (max-width:900px){
+        .hero-section{
+            padding: 48px 0 100px;
+        }
+        .container{
+            width: 689px;
+        }
+        .hero-bg{
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .hero__content-wrapper{
+            text-align: center;
+        }
+    }
+// hero tablet 

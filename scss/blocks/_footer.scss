@@ -1,0 +1,39 @@
+.site-footer {
+    padding: 31px 0;
+    background-color: #1B262F;
+    background-image: url(../../images/footerimg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.footer {
+    @include Display($items: center, $space:space-between, $gap:0px);
+}
+.footer__logo-wrapper {
+    @include Display($items:center, $space: start, $gap:64px);
+}
+.footer__logo {
+    display: inline-block;
+}
+.footer__list {
+    @include Display($items:center, $space:start, $gap:40px);
+}
+.footer__logo-link {
+    @include textStyle($MB:0px, $FS:15px, $FW:700, $CLR:#9e9e9f, $LH:17px, $CASE:capitalize);
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: $white-clr;
+    }
+}
+.logo__app-wrapper{
+    @include Display($items:center, $space:start, $gap:24px);   
+}
+.app__logo{
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: #DA6D97;
+    }
+}

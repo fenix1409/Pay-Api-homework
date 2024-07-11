@@ -1,0 +1,68 @@
+.site-header {
+    padding: 40px 0 74px;
+}
+.header {
+    @include Display($items: center, $space: space-between, $gap: 0px);
+}
+.header__logo-wrapper {
+    @include Display($items:center, $space: start, $gap:64px);
+}
+.header__logo {
+    display: inline-block;
+}
+.header__list {
+    @include Display($items:center, $space:start, $gap:40px);
+}
+.header__logo-link {
+    @include textStyle($MB:0px, $FS:15px, $FW:700, $CLR:$text-clr, $LH:17px, $CASE:capitalize);
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: $title-clr;
+    }
+}
+.header__btn-demo {
+    @include buttonStyle($BTN_W:173px, $BTN_PY:15px, $BTN_BG_CLR:$pink-clr,$BTN_BR_Radius:30px, $BTN_Border_CLR:transparent,$BTN_FS:16px,$BTN_FW:700, $BTN_LH:17px, $BTN_CLR:$white-clr,$BTN_CASE:capitalize);
+
+    &:hover{
+        opacity: 75%;
+    }
+}
+.header__hamburger-btn{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+
+
+// header tablet 
+@media (max-width:900px){
+    .site-header{
+        padding: 40px 0 48px;
+    }
+    body{
+        background-image: url(../../images/tablet-header.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}
+// header tablet 
+
+// header mobile 
+@media (max-width:692px){
+    .site-header{
+        padding: 40px 0 32px;
+    }
+    body{
+        background-image: url(../../images/mobile-header.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .header__list, .header__btn-demo{
+        display: none;
+    }
+    .header__hamburger-btn{
+        display: block;
+    }
+}

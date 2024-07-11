@@ -1,0 +1,10 @@
+.start-section {
+    padding-bottom: 96px;
+}
+.start{
+    @include Display($items: center, $space:space-between, $gap:0px);
+}
+.start__title {
+    @include textStyle($MB:0px, $FS:48px, $FW:400, $CLR:$title-clr, $LH:56px, $CASE:inherit);
+    font-family: 'DM Serif Display';
+}

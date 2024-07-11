@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'DM Serif Display', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    background-image: url(../images/body-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 646px 618px;
+    background-color: #EDF3F8;
+}

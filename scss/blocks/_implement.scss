@@ -1,0 +1,17 @@
+.implement-section {
+    padding-top: 100px;
+}
+.implement {
+    @include Display($items:center, $space:space-between, $gap:0px);
+}
+.implement__content-wrapper {
+    width: 445px;
+}
+.implement__title {
+    @include textStyle($MB:24px, $FS:48px, $FW:400, $CLR:$title-clr, $LH:56px, $CASE:inherit);
+    font-family: DM Serif Display;
+}
+.implement__text {
+    @include textStyle($MB:0px, $FS:15px, $FW:400, $CLR:$text-clr, $LH:28px, $CASE:inherit);  
+    font-family: Public Sans; 
+}
