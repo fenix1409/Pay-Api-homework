@@ -71,7 +71,7 @@ body {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 .site-header {
@@ -495,6 +495,7 @@ body {
     padding: 80px 0;
     background-image: url(../../images/work-mobile-bg.png);
     background-repeat: no-repeat;
+    background-size: 780px auto;
     background-position: center top;
   }
   .work {
@@ -605,6 +606,10 @@ body {
     text-transform: inherit;
     font-family: DM Serif Display;
   }
+  .implement__img {
+    width: 328px;
+    height: 209px;
+  }
 }
 .simple-section {
   padding: 146px;
@@ -674,7 +679,7 @@ body {
     flex-direction: column-reverse;
   }
   .simple__content-wrapper {
-    width: 76%;
+    width: 328px;
     text-align: center;
   }
   .simple__title {
@@ -685,6 +690,10 @@ body {
     line-height: 36px;
     text-transform: inherit;
     font-family: DM Serif Display;
+  }
+  .simple__img {
+    width: 329px;
+    height: 290px;
   }
 }
 .information-section {
@@ -811,6 +820,9 @@ body {
     line-height: 36px;
     text-transform: inherit;
     font-family: "DM Serif Display";
+  }
+  .start__form {
+    width: 100%;
   }
 }
 .site-footer {

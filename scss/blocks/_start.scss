@@ -32,6 +32,9 @@
     @include textStyle($MB:0px, $FS:32px, $FW:400, $CLR:$title-clr, $LH:36px, $CASE:inherit);
     font-family: 'DM Serif Display';
 }
+.start__form{
+    width: 100%;
+}
 }
 // mobile 
 

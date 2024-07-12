@@ -52,6 +52,10 @@
         @include textStyle($MB:24px, $FS:36px, $FW:400, $CLR:$title-clr, $LH:36px, $CASE:inherit);
         font-family: DM Serif Display;
     }
+    .implement__img{
+        width: 328px;
+        height: 209px;
+    }
 }
 // mobile 
 

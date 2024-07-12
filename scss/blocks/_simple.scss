@@ -49,12 +49,16 @@
             flex-direction: column-reverse;
     }
     .simple__content-wrapper {
-        width: 76%;
+        width: 328px;
         text-align: center;
     }
     .simple__title{
         @include textStyle($MB:24px, $FS:36px, $FW:400, $CLR:$title-clr, $LH:36px, $CASE:inherit);
     font-family: DM Serif Display;
+    }
+    .simple__img{
+        width: 329px;
+        height: 290px;
     }
 }
 // mobile 
