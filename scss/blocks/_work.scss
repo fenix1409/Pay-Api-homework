@@ -34,3 +34,53 @@
     @include Display($items: center, $space:start, $gap:42px);
     flex-wrap: wrap;
 } 
+
+// tablet 
+@media (max-width:1109px){
+    .work-section{
+        padding: 88px 0;
+        background-image: url(../../images/work-tablet-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    }
+    .work{
+        @include Display($items: center, $space:start, $gap:64px);
+            flex-direction: column-reverse;
+    }
+    .work__content-wrapper {
+        width: 70%;
+        text-align: center;
+    }
+}
+// tablet 
+
+
+// mobile 
+@media (max-width:659px){
+    .work-section{
+        padding: 80px 0;
+        background-image: url(../../images/work-mobile-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    }
+    .work{
+        @include Display($items: center, $space:start, $gap:56px);
+            flex-direction: column-reverse;
+    }
+    .work__content-wrapper {
+        width: 64%;
+        text-align: center;
+    }
+    .work__title{
+        @include textStyle($MB:16px, $FS:32px, $FW:400, $CLR:$white-clr, $LH:36px, $CASE:inherit);
+    font-family: DM Serif Display;
+    }
+    .work__text {
+        @include textStyle($MB:60px, $FS:15px, $FW:400, $CLR:rgb(251, 252, 254), $LH:28px, $CASE:inherit);
+        font-family: 'Public Sans';
+    }
+    .work__logo-wrapper{
+        width: 359px;
+    }
+}
+// mobile 

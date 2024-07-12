@@ -34,7 +34,6 @@
     border: none;
     display: none;
 }
-
 .navbar-menu {
     padding: 25px;
     position: fixed;
@@ -45,6 +44,9 @@
     top: 0;
     right: -100px;
     transition: all 0.3s linear;
+}
+.show{
+    right: 0;
 }
 .navbar__top {
     text-align: end;

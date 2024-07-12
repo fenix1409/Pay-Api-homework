@@ -37,3 +37,29 @@
         color: #DA6D97;
     }
 }
+
+
+
+// mobile 
+@media (max-width:808px){
+    .site-footer{
+        padding: 41px 120px;
+        background-image: url(../../images/footer-mobile-bg.png);
+        background-repeat: no-repeat;
+        background-size: 455px auto;
+        background-position: center bottom;
+    }
+    .footer {
+        @include Display($items: center, $space:center, $gap:40px);
+        flex-direction: column;
+    }
+    .footer__logo-wrapper {
+        @include Display($items:center, $space: center, $gap:64px);
+        flex-direction: column;
+    }
+    .footer__list {
+        @include Display($items:center, $space:start, $gap:31px);
+        flex-direction: column;
+    }
+    }
+    // mobile 

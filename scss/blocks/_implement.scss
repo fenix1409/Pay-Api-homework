@@ -15,3 +15,43 @@
     @include textStyle($MB:0px, $FS:15px, $FW:400, $CLR:$text-clr, $LH:28px, $CASE:inherit);  
     font-family: Public Sans; 
 }
+
+
+// tablet 
+@media (max-width:1078px){
+    .implement-section {
+        padding-top: 100px 0;
+    }
+    .implement {
+        @include Display($items:center, $space:center, $gap:48px);
+        flex-direction: column;
+    }
+    .implement__content-wrapper {
+        width: 70%;
+        text-align: center;
+    }
+}
+// tablet 
+
+
+
+// mobile 
+@media (max-width:689px){
+    .implement-section {
+        padding-top: 80px 0;
+    }
+    .implement {
+        @include Display($items:center, $space:center, $gap:48px);
+        flex-direction: column;
+    }
+    .implement__content-wrapper {
+        width: 70%;
+        text-align: center;
+    }
+    .implement__title {
+        @include textStyle($MB:24px, $FS:36px, $FW:400, $CLR:$title-clr, $LH:36px, $CASE:inherit);
+        font-family: DM Serif Display;
+    }
+}
+// mobile 
+

@@ -18,3 +18,43 @@
     @include textStyle($MB:0px, $FS:15px, $FW:400, $CLR:$text-clr, $LH:28px, $CASE:inherit);
     font-family: Public Sans;
 }
+
+
+// tablet 
+@media (max-width:1195px){
+    .simple-section{
+        padding-bottom: 100px;
+        background-image: none;
+    }
+    .simple{
+        @include Display($items: center, $space:start, $gap:48px);
+        text-align: center;
+            flex-direction: column-reverse;
+    }
+    .simple__content-wrapper {
+        width: 70%;
+        text-align: center;
+    }
+}
+// tablet 
+
+
+// mobile 
+@media (max-width:846px){
+    .simple-section{
+        padding-bottom: 80px;
+    }
+    .simple{
+        @include Display($items: center, $space:start, $gap:48px);
+            flex-direction: column-reverse;
+    }
+    .simple__content-wrapper {
+        width: 76%;
+        text-align: center;
+    }
+    .simple__title{
+        @include textStyle($MB:24px, $FS:36px, $FW:400, $CLR:$title-clr, $LH:36px, $CASE:inherit);
+    font-family: DM Serif Display;
+    }
+}
+// mobile 
