@@ -53,3 +53,83 @@
         color: $white-clr;
     }
 }
+
+
+
+// tablet 
+@media (max-width:888px){
+    .pricing-hero-section {
+        padding-bottom: 100px;
+    }
+    .hero__pricing {
+        @include Display($items: center, $space:start, $gap:10px);
+        text-align: center;
+    }
+    .hero__pricing-title {
+        @include textStyle($MB:69px, $FS:48px, $FW:400, $CLR:$title-clr, $LH:56px, $CASE:inherit);
+        font-family: DM Serif Display;
+        text-align: center;
+    }
+    .cost__list {
+        padding: 24px 0;
+        border-top: 1px solid rgb(54, 83, 107);
+        border-bottom: 1px solid rgb(54, 83, 107);
+        @include Display($items:start, $space:start, $gap:8px);
+        flex-direction: column;
+    }
+    .hero__pricing-content {
+        width: 223px;
+        margin: 0 auto;
+    }
+    .cost__item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .cost__span {
+        @include textStyle($MB:0px, $FS:16px, $FW:400, $CLR:#6C8294, $LH:28px, $CASE:inherit);
+        font-family: DM Serif Display;  
+        margin-left: 24px;
+    }
+    .cost__title {
+        @include textStyle($MB:13px, $FS:24px, $FW:400, $CLR:$pink-clr, $LH:40px, $CASE:inherit);
+        font-family: DM Serif Display;
+    }
+    .cost__text {
+        @include textStyle($MB:19px, $FS:15px, $FW:400, $CLR:$title-clr, $LH:28px, $CASE:inherit);
+        font-family: DM Serif Display;
+    }
+    .cost__subtitle {
+        @include textStyle($MB:21px, $FS:48px, $FW:400, $CLR:$title-clr, $LH:72px, $CASE:inherit);
+        font-family: DM Serif Display;
+    }
+}
+// tablet 
+
+// mobile 
+@media (max-width:705px){
+    .pricing-hero-section{
+        padding: 48px 0 80px;
+    }
+    .hero__pricing-title {
+        @include textStyle($MB:48px, $FS:32px, $FW:400, $CLR:$title-clr, $LH:36px, $CASE:inherit);
+        font-family: DM Serif Display;
+        text-align: center;
+    }
+    .hero__pricing {
+        @include Display($items: center, $space:start, $gap:48px);
+        flex-direction: column;
+        text-align: center;
+    }
+    .cost__title {
+        @include textStyle($MB:81px, $FS:24px, $FW:400, $CLR:$pink-clr, $LH:32px, $CASE:inherit);
+        font-family: DM Serif Display;
+        text-align: center;
+    }
+    .cost__text {
+        display: none;
+    }   
+    
+}
+// mobile 
+

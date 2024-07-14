@@ -1030,4 +1030,119 @@ body {
 .cost__btn:hover {
   background-color: #36536B;
   color: white;
+}
+
+@media (max-width: 888px) {
+  .pricing-hero-section {
+    padding-bottom: 100px;
+  }
+  .hero__pricing {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    text-align: center;
+  }
+  .hero__pricing-title {
+    margin-bottom: 69px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #36536B;
+    line-height: 56px;
+    text-transform: inherit;
+    font-family: DM Serif Display;
+    text-align: center;
+  }
+  .cost__list {
+    padding: 24px 0;
+    border-top: 1px solid rgb(54, 83, 107);
+    border-bottom: 1px solid rgb(54, 83, 107);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .hero__pricing-content {
+    width: 223px;
+    margin: 0 auto;
+  }
+  .cost__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cost__span {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C8294;
+    line-height: 28px;
+    text-transform: inherit;
+    font-family: DM Serif Display;
+    margin-left: 24px;
+  }
+  .cost__title {
+    margin-bottom: 13px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #BA4270;
+    line-height: 40px;
+    text-transform: inherit;
+    font-family: DM Serif Display;
+  }
+  .cost__text {
+    margin-bottom: 19px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #36536B;
+    line-height: 28px;
+    text-transform: inherit;
+    font-family: DM Serif Display;
+  }
+  .cost__subtitle {
+    margin-bottom: 21px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #36536B;
+    line-height: 72px;
+    text-transform: inherit;
+    font-family: DM Serif Display;
+  }
+}
+@media (max-width: 705px) {
+  .pricing-hero-section {
+    padding: 48px 0 80px;
+  }
+  .hero__pricing-title {
+    margin-bottom: 48px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #36536B;
+    line-height: 36px;
+    text-transform: inherit;
+    font-family: DM Serif Display;
+    text-align: center;
+  }
+  .hero__pricing {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 48px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cost__title {
+    margin-bottom: 81px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #BA4270;
+    line-height: 32px;
+    text-transform: inherit;
+    font-family: DM Serif Display;
+    text-align: center;
+  }
+  .cost__text {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
