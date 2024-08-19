@@ -1145,4 +1145,57 @@ body {
   .cost__text {
     display: none;
   }
+}
+.about-hero-section {
+  padding: 82px 0 100px;
+}
+
+.about__hero {
+  flex-direction: column;
+}
+
+.about__hero-title {
+  margin-bottom: 51px;
+  font-size: 56px;
+  font-weight: 400;
+  color: #36536B;
+  line-height: 56px;
+  text-transform: inherit;
+  font-family: DM Serif Display;
+}
+
+.hero__about-wrapper {
+  width: 942px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 51px;
+  flex-direction: column;
+}
+
+.hero__about-content {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
+}
+
+.hero__about-subtitle {
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #36536B;
+  line-height: 40px;
+  text-transform: inherit;
+  font-family: DM Serif Display;
+}
+
+.hero__about-text {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6C8294;
+  line-height: 28px;
+  text-transform: inherit;
+  font-family: DM Serif Display;
 }/*# sourceMappingURL=main.css.map */

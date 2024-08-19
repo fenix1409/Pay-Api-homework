@@ -1,0 +1,26 @@
+.about-hero-section {
+    padding: 82px 0 100px;
+}
+.about__hero {
+    flex-direction: column;
+}
+.about__hero-title {
+    @include textStyle($MB:51px, $FS:56px, $FW:400, $CLR:$title-clr, $LH:56px, $CASE:inherit);
+    font-family: DM Serif Display;
+}
+.hero__about-wrapper{
+    width: 942px;
+    @include Display($items:start, $space:start, $gap:51px);
+    flex-direction: column;
+}
+.hero__about-content {
+    @include Display($items:start, $space:start, $gap:30px);
+}
+.hero__about-subtitle {
+    @include textStyle($MB:0px, $FS:32px, $FW:400, $CLR:$title-clr, $LH:40px, $CASE:inherit);
+    font-family: DM Serif Display;
+}
+.hero__about-text {
+    @include textStyle($MB:0px, $FS:15px, $FW:400, $CLR:$text-clr, $LH:28px, $CASE:inherit);
+    font-family: DM Serif Display;
+}
